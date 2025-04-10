@@ -4,13 +4,20 @@ const nextBtn = document.getElementById('next-btn');
 let currentPage = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
-    const popup = document.getElementById('popup-overlay');
-    const closeBtn = document.getElementById('popup-close');
-
-    closeBtn.addEventListener('click', () => {
-        popup.style.display = 'none';
+    const popup1 = document.getElementById('popup1');
+    const popup2 = document.getElementById('popup2');
+    const popup1Close = document.getElementById('popup1-close');
+    const popup2Close = document.getElementById('popup2-close');
+  
+    popup1Close.addEventListener('click', () => {
+        popup1.style.display = 'none';
+        popup2.style.display = 'flex';
     });
-});
+  
+    popup2Close.addEventListener('click', () => {
+        popup2.style.display = 'none';
+    });
+  });
   
 window.onload = () => {
     showPage(0, true);
