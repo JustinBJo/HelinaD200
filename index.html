@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>200일 편지</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-box">
+            <p>앗! 남자친구에게 러브레터가 온 것 같다. 🎉<br><strong>봉투를 클릭해서 열어 볼까?</strong></p>
+            <button id="popup-close">편지 열기 💌</button>
+        </div>
+    </div>
+
+    <div id="container">
+        <button id="prev-btn" class="nav-btn" onclick="prevPage()">←</button>
+
+        <div class="image-wrapper">
+            <img src="images/envelope.png" class="page active" />
+            <img src="images/page1.png" class="page letter" />
+            <img src="images/page2.png" class="page letter" />
+            <img src="images/page3.png" class="page letter" />
+            <img src="images/final.png" class="page fin" />
+    </div>
+
+    <button id="next-btn" class="nav-btn" onclick="nextPage()">→</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
